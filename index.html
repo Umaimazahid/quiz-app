@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Girly Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="screen">
+      <h1 class="title"> Quiz App </h1>
+      <p class="subtitle">Are you ready to answering the questions?</p>
+      <button id="startBtn" class="btn big">Start Quiz</button>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quiz-screen" class="screen" style="display:none;">
+      <header class="quiz-header">
+        <h2 class="title small"> Quiz </h2>
+        <div class="meta">
+          <div class="timer-wrap">⏱ <span id="timer">120</span>s</div>
+          <div class="progress">Question <span id="qIndex">1</span>/<span id="qTotal">1</span></div>
+        </div>
+      </header>
+
+      <main class="question-area">
+        <p id="question" class="question-text">Question text</p>
+        <div id="options" class="options"></div>
+      </main>
+
+      <footer class="navigation">
+        <button id="prevBtn" class="btn">⏪ Previous</button>
+        <div class="spacer"></div>
+        <button id="nextBtn" class="btn">Next ⏩</button>
+      </footer>
+
+      <div id="result" class="result-area" aria-live="polite"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
